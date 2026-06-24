@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FE – Modern Local Front-End Studio | ASGRG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FE is a modern local front‑end studio delivering clean, high-performance interfaces. ASGRG: a focused approach to fast, reliable, and user-friendly web experiences." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-black antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-black/5">
+    <nav class="max-w-7xl mx-auto px-8 md:px-16 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-black flex items-center justify-center shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+          <span class="text-white text-lg font-bold tracking-tight">FE</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm font-semibold tracking-tight text-black">FE Studio</span>
+          <span class="text-xs text-black/60">Modern Local Front-End Experts</span>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-black/70">
+        <a href="#features" class="hover:text-black transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/60 rounded-full px-1 py-1">Features</a>
+        <a href="#benefits" class="hover:text-black transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/60 rounded-full px-1 py-1">Benefits</a>
+        <a href="#about" class="hover:text-black transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/60 rounded-full px-1 py-1">About</a>
+        <a href="#testimonials" class="hover:text-black transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/60 rounded-full px-1 py-1">Testimonials</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-button md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-black/10 text-black hover:bg-black hover:text-white transition-all duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-black/60" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden border-t border-black/5 bg-white/95 backdrop-blur-sm transition-all duration-300 ease-out">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-4 flex flex-col gap-3 text-sm font-medium text-black/80">
+        <a href="#features" class="py-2 hover:text-black transition-colors duration-300">Features</a>
+        <a href="#benefits" class="py-2 hover:text-black transition-colors duration-300">Benefits</a>
+        <a href="#about" class="py-2 hover:text-black transition-colors duration-300">About</a>
+        <a href="#testimonials" class="py-2 hover:text-black transition-colors duration-300">Testimonials</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-40 -right-32 w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-r from-black/5 via-[#4A90E2]/10 to-black/5 blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-32 w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-r from-[#4A90E2]/15 via-black/5 to-transparent blur-3xl"></div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-8 md:px-16 py-32 md:py-40">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-16 items-center">
+          <!-- Hero Content -->
+          <div class="space-y-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
+              <span class="w-2 h-2 rounded-full bg-[#4A90E2]"></span>
+              <span class="text-xs font-medium tracking-wide text-black/70 uppercase">Local Front-End Excellence</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black leading-tight">
+              FE — ASGRG:
+              <span class="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-black via-[#4A90E2] to-black">
+                Precision Front-End for Local Businesses
+              </span>
+            </h1>
+            <p class="text-base md:text-lg text-black/70 leading-relaxed max-w-xl">
+              ASGRG stands for a focused approach to modern front-end engineering: fast, resilient, and gracefully designed interfaces tailored to local businesses. We turn complex requirements into clean, intuitive experiences that convert visitors into customers.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <a href="https://[p[p.com" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-black text-white text-sm font-semibold shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-black/70">
+                Schedule a Strategy Call
+                <svg class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5 19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" />
+                </svg>
+              </a>
+              <div class="flex items-center gap-3 text-xs text-black/60">
+                <div class="flex -space-x-2">
+                  <div class="w-7 h-7 rounded-full bg-black/5 border border-black/10 flex items-center justify-center text-[10px] font-semibold text-black shadow-[0_10px_40px_rgba(0,0,0,0.1)]">UX</div>
+                  <div class="w-7 h-7 rounded-full bg-black/5 border border-black/10 flex items-center justify-center text-[10px] font-semibold text-black shadow-[0_10px_40px_rgba(0,0,0,0.08)]">UI</div>
+                  <div class="w-7 h-7 rounded-full bg-black/5 border border-black/10 flex items-center justify-center text-[10px] font-semibold text-black shadow-[0_10px_40px_rgba(0,0,0,0.06)]">FE</div>
+                </div>
+                <span class="leading-snug">
+                  Purpose-built interfaces<br class="hidden sm:block" /> for local impact.
+                </span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-8 text-xs text-black/60 pt-4">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75 9 17.25 19.5 6.75" />
+                </svg>
+                <span>Sub‑second perceived load on modern devices</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 9.75 12 6.75 15 9.75M9 14.25 12 17.25 15 14.25" />
+                </svg>
+                <span>Pixel‑precise, brand‑aligned layouts</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9 12 4.5 20.25 9 12 13.5 3.75 9z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 15 12 19.5 20.25 15" />
+                </svg>
+                <span>Built with Claude‑assisted precision &amp; QA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual -->
+          <div class="relative">
+            <div class="relative rounded-2xl bg-white border border-black/5 shadow-[0_10px_40px_rgba(0,0,0,0.1)] p-6 md:p-8 flex flex-col gap-6">
+              <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                  <span class="text-xs font-semibold text-black/60 uppercase tracking-wide">ASGRG Framework</span>
+                  <span class="text-lg font-semibold text-black tracking-tight">Front-End Performance Snapshot</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span class="text-xs text-black/50">Live</span>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl border border-black/5 bg-black/2.5 px-4 py-3 flex flex-col gap-1">
+                  <span class="text-[11px] text-black/50 uppercase tracking-wide">Core Web Vitals</span>
+                  <span class="text-2xl font-bold tracking-tight text-black">98</span>
+                  <span class="text-[11px] text-black/60">Performance score on recent builds.</span>
+                </div>
+                <div class="rounded-xl border border-black/5 bg-black/2.5 px-4 py-3 flex flex-col gap-1">
+                  <span class="text-[11px] text-black/50 uppercase tracking-wide">Conversion Uplift</span>
+                  <span class="text-2xl font-bold tracking-tight text-black">+34%</span>
+                  <span class="text-[11px] text-black/60">Average lift after redesign.</span>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between text-xs text-black/60">
+                  <span>Render pipeline stability</span>
+                  <span>RFR</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-black/5 overflow-hidden">
+                  <div class="h-2 rounded-full bg-gradient-to-r from-[#4A90E2] via-black to-black/80 w-[86%]"></div>
+                </div>
+                <p class="text-xs text-black/65 leading-relaxed">
+                  RFR is our internal readiness‑for‑release metric. Every interface ships only after it passes visual, accessibility, and interaction checks at real‑world network speeds.
+                </p>
+              </div>
+              <div class="grid grid-cols-3 gap-4 text-xs text-black/70">
+                <div class="flex flex-col gap-1">
+                  <span class="inline-flex items-center gap-1 font-medium">
+                    <svg class="w-4 h-4 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 7.5 9.75 14.25 7.5 12" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
+                    </svg>
+                    QWRGQWRG
+                  </span>
+                  <span class="text-[11px] text-black/60">Careful QA on every viewport and touchpoint.</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span class="inline-flex items-center gap-1 font-medium">
+                    <svg class="w-4 h-4 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75 9 17.25 19.5 6.75" />
+                    </svg>
+                    QWGQWRG
+                  </span>
+                  <span class="text-[11px] text-black/60">Stable deploys and predictable timelines.</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span class="inline-flex items-center gap-1 font-medium">
+                    <svg class="w-4 h-4 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12 9 3.75 15 12l-6 8.25L2.25 12zM9 3.75 15 12l6.75-8.25L15 3.75 9 3.75z" />
+                    </svg>
+                    Local First
+                  </span>
+                  <span class="text-[11px] text-black/60">Optimized for your city, market, and audience.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-white">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-32">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-12 mb-12 md:mb-16">
+          <div class="space-y-4 max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black">
+              RFR: Rigorous Front-End Readiness
+            </h2>
+            <p class="text-base md:text-lg text-black/70 leading-relaxed">
+              RFR (Release‑Ready Front‑End) is our internal quality bar that every local site must meet before launch. From semantic HTML and accessible interactions to pixel‑perfect Tailwind implementations, nothing ships until your interface feels fast, intuitive, and reliable on real devices.
+            </p>
+          </div>
+          <div class="max-w-md text-sm text-black/60">
+            <p>
+              Leveraging Claude (Anthropic) as a precision assistant, we validate patterns, refine copy, and stress‑test edge cases while keeping experienced human designers and engineers fully in control of every decision.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
+          <!-- Feature 1 -->
+          <article class="group rounded-2xl border border-black/5 bg-white shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 md:p-8 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight text-black">
+              QWRGQWRG: Structured Local Design Systems
+            </h3>
+            <p class="text-sm text-black/70 leading-relaxed">
+              QWRGQWRG is our shorthand for opinionated, yet flexible, local design systems. We define tokenized spacing, typography, and component patterns that feel consistent across your entire site while still allowing each page to adapt to its purpose—from lead capture to case studies and service pages.
+            </p>
+            <ul class="mt-1 space-y-2 text-sm text-black/65">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-1 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75 9 17.25 19.5 6.75" />
+                </svg>
+                <span>Token‑driven Tailwind architecture that scales with your content.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-1 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <span>Reusable components for hero sections, feature grids, testimonials, and CTAs.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="group rounded-2xl border border-black/5 bg-white shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 md:p-8 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 6.75 4.5 12l5.25 5.25M14.25 6.75 19.5 12l-5.25 5.25" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight text-black">
+              QWGQWRG: Resilient Interaction Flows
+            </h3>
+            <p class="text-sm text-black/70 leading-relaxed">
+              QWGQWRG is our approach to front‑end flows that never leave visitors guessing. From scroll‑linked navigation to energetic hover states and touch‑friendly controls, we design interactions that feel smooth and responsive—even on older devices and slower networks.
+            </p>
+            <ul class="mt-1 space-y-2 text-sm text-black/65">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-1 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18" />
+                </svg>
+                <span>Energetic micro‑interactions on buttons, cards, and navigation with consistent motion.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-1 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.25 12 4.5l7.5 3.75M4.5 15.75 12 12l7.5 3.75" />
+                </svg>
+                <span>Smooth scrolling and accessible focus states baked into every interaction.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="group rounded-2xl border border-black/5 bg-white shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 md:p-8 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 6.75 15.75 12l-4.5 5.25" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12.75 12l-4.5 5.25" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold tracking-tight text-black">
+              LocalSite Architecture, Global-Grade Quality
+            </h3>
+            <p class="text-sm text-black/70 leading-relaxed">
+              Although FE specializes in local sites, our standards match global product teams. That means semantic head tags, clean URLs, responsive grids, and Lighthouse‑friendly markup that helps your business surface in search and feel trustworthy to visitors.
+            </p>
+            <ul class="mt-1 space-y-2 text-sm text-black/65">
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-1 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5 3 9.75 8.25 15M15.75 4.5 21 9.75 15.75 15M9.75 19.5l4.5-15" />
+                </svg>
+                <span>Semantic HTML5, ARIA attributes, and a11y best practices by default.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-4 h-4 mt-1 text-[#4A90E2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.5h16.5M3.75 9.75h16.5M3.75 15h16.5M3.75 19.5h16.5" />
+                </svg>
+                <span>Clean Tailwind utility stacks for long‑term maintainability.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="bg-black/3">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div class="space-y-5">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black">
+              O[J[ P[qjwi[r gqj[wrgq]r:
+              <span class="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-black via-[#4A90E2] to-black">
+                Tangible Outcomes for Local Businesses
+              </span>
+            </h2>
+            <p class="text-base md:text-lg text-black/70 leading-relaxed">
+              Internally, we call it <span class="font-medium">O[J[ P[qjwi[r gqj[wrgq]r</span>: the discipline of translating front‑end quality into business outcomes. Faster pages, clearer structure, and more confident interactions consistently turn into higher engagement, more leads, and better local visibility.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="rounded-2xl bg-white border border-black/5 p-5 flex flex-col gap-2 shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
+                <span class="text-xs font-semibold text-black/60 uppercase tracking-wide">Average impact</span>
+                <span class="text-2xl font-bold tracking-tight text-black">+27%</span>
+                <p class="text-xs text-black/65 leading-relaxed">
+                  Increase in on‑page engagement after restructuring content and CTAs.
+                </p>
+              </div>
+              <div class="rounded-2xl bg-white border border-black/5 p-5 flex flex-col gap-2 shadow-[0_10px_40px_rgba(0,0,0,0.08)]">
+                <span class="text-xs font-semibold text-black/60 uppercase tracking-wide">Time saved</span>
+                <span class="text-2xl font-bold tracking-tight text-black">40h/mo</span>
+                <p class="text-xs text-black/65 leading-relaxed">
+                  Typical reduction in ad‑hoc fixes and “quick patch” requests after launch.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-base md:text-lg font-semibold tracking-tight text-black">
+                  Clear, Conversion-First Layouts
+                </h3>
+                <p class="text-sm text-black/70 leading-relaxed">
+                  Layouts are spacious by design: generous white space, clear sections, and hierarchy that makes it effortless for visitors to understand who you are, what you offer, and what to do next. This reduces bounce and increases form submissions and calls from your local audience.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17.25 3 12l6.75-5.25M14.25 6.75 21 12l-6.75 5.25" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-base md:text-lg font-semibold tracking-tight text-black">
+                  Energetic, Yet Minimal Interactions
+                </h3>
+                <p class="text-sm text-black/70 leading-relaxed">
+                  Your site feels polished and alive—without overwhelming animations. Subtle scale, shadow, and brightness transitions make CTAs stand out and cards feel clickable, gently guiding visitors toward high‑value actions like booking, calling, or requesting a quote.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6-3h6m-6 6h3" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6.75A2.25 2.25 0 0 1 6.75 4.5h10.5A2.25 2.25 0 0 1 19.5 6.75v10.5A2.25 2.25 0 0 1 17.25 19.5H6.75A2.25 2.25 0 0 1 4.5 17.25V6.75z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-base md:text-lg font-semibold tracking-tight text-black">
+                  Claude-Assisted Copy and Structure
+                </h3>
+                <p class="text-sm text-black/70 leading-relaxed">
+                  Claude (Anthropic) helps us rapidly explore messaging angles, FAQs, and benefit framing, while our senior team curates and refines every word. The result is content that feels human, specific, and relevant to your local market—without the generic AI tone.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#4A90E2]/10 text-[#4A90E2]">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9V3.75m0 17.25V15M9 12H3.75M20.25 12H15M18 18l-2.25-2.25M8.25 8.25 6 6M18 6l-2.25 2.25M8.25 15.75 6 18" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-base md:text-lg font-semibold tracking-tight text-black">
+                  Built to Evolve with Your Business
+                </h3>
+                <p class="text-sm text-black/70 leading-relaxed">
+                  We favor Tailwind‑driven, modular layouts that make it easy to add new services, locations, or case studies over time. That means fewer full rebuilds, less downtime, and a front‑end foundation that supports your next stage of growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative">
+      <div class="relative max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-32">
+        <div class="relative rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+          <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/75 to-black/60"></div>
+
+          <div class="relative px-8 md:px-16 py-16 md:py-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
+            <div class="space-y-4 max-w-2xl">
+              <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">
+                Turn your local presence into a premium digital experience.
+              </h2>
+              <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                Partner with FE to apply the ASGRG framework to your next LocalSite. We will map your services, design a high‑impact landing, and implement a fast, accessible front‑end using Tailwind and Claude‑assisted refinement.
+              </p>
+              <div class="flex flex-wrap items-center gap-4 text-xs text-white/70">
+                <div class="inline-flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75 9 17.25 19.5 6.75" />
+                  </svg>
+                  <span>No obligation, discovery‑first conversation.</span>
+                </div>
+                <div class="inline-flex items-center gap-2">
+                  <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9V3.75m0 16.5V15M9 12H3.75M20.25 12H15" />
+                  </svg>
+                  <span>Typical build: 2–4 weeks from aligned brief.</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start gap-4">
+              <a href="https://[p[p.com" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-white text-black text-sm font-semibold shadow-[0_10px_40px_rgba(0,0,0,0.35)] hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80">
+                Book Your Intro Call
+                <svg class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5 19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" />
+                </svg>
+              </a>
+              <p class="text-xs text-white/70">
+                Or email us directly at
+                <span class="font-medium underline decoration-white/40 decoration-1 underline-offset-2">pop@[p[p.com</span>
+                with a short description of your project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-white">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-32">
+        <div class="max-w-3xl space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-2">
+            About FE — The Studio Behind ASGRG
+          </h2>
+          <p class="text-base md:text-lg text-black/70 leading-relaxed">
+            FE was founded by a small collective of front‑end specialists who had spent years building complex interfaces for SaaS and product companies. After repeatedly being asked to “just make our local site feel this good,” we created a dedicated practice for LocalSites. The ASGRG framework, RFR metric, and concepts like QWRGQWRG and QWGQWRG emerged from dozens of launches where we refined what actually moves the needle for local businesses: clear structure, fast pages, and detail‑oriented interactions.
+          </p>
+          <p class="text-base md:text-lg text-black/70 leading-relaxed">
+            Our mission is to give local teams access to the same front‑end quality that high‑growth tech companies enjoy—without the overhead. We value clarity over noise, accessibility over shortcuts, and long‑term maintainability over fragile quick wins. Every project is guided by a simple set of values: respect for your brand, care for your visitors, and a relentless focus on how design and engineering translate into measurable business outcomes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-black/3">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-32">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-12 mb-12 md:mb-16">
+          <div class="space-y-4 max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black">
+              Trusted by Local Teams Who Expect More
+            </h2>
+            <p class="text-base md:text-lg text-black/70 leading-relaxed">
+              From first‑time local sites to redesigns of established businesses, FE helps teams translate their offline strengths into premium digital experiences that feel simple, modern, and trustworthy.
+            </p>
+          </div>
+          <div class="max-w-md text-sm text-black/60">
+            <p>
+              Every testimonial below reflects real outcomes our clients experienced by applying the ASGRG framework, RFR quality bar, and our Tailwind‑driven implementation approach.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          <!-- Testimonial 1 -->
+          <article class="rounded-2xl bg-white border border-black/5 p-6 flex flex-col gap-4 shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out">
+            <div class="flex items-center justify-between gap-3">
+              <div>
+                <h3 class="text-sm font-semibold tracking-tight text-black">Emily Carter</h3>
+                <p class="text-xs text-black/60">Owner, Carter &amp; Co. Legal</p>
+              </div>
+              <div class="flex items-center gap-1 text-[#4A90E2] text-xs">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-black/70 leading-relaxed">
+              FE rebuilt our LocalSite using their RFR approach and the difference was immediate. Clients tell us they finally “understand what we do” after a 30‑second visit. Form submissions from organic search are up 42% without any additional advertising.
+            </p>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="rounded-2xl bg-white border border-black/5 p-6 flex flex-col gap-4 shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out">
+            <div class="flex items-center justify-between gap-3">
+              <div>
+                <h3 class="text-sm font-semibold tracking-tight text-black">Marcus Lee</h3>
+                <p class="text-xs text-black/60">Marketing Lead, Brightline Fitness</p>
+              </div>
+              <div class="flex items-center gap-1 text-[#4A90E2] text-xs">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-black/70 leading-relaxed">
+              The QWGQWRG interaction patterns FE introduced make our site feel premium on both desktop and mobile. Class sign‑ups now happen directly from the homepage because the layout and CTAs are so clear. It feels like a product‑grade app, not a template.
+            </p>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="rounded-2xl bg-white border border-black/5 p-6 flex flex-col gap-4 shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out">
+            <div class="flex items-center justify-between gap-3">
+              <div>
+                <h3 class="text-sm font-semibold tracking-tight text-black">Sofia Martinez</h3>
+                <p class="text-xs text-black/60">Director, Northside Dental</p>
+              </div>
+              <div class="flex items-center gap-1 text-[#4A90E2] text-xs">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-black/70 leading-relaxed">
+              We were worried about accessibility and older patients using our site. FE’s ASGRG framework and focus on typography, spacing, and semantics solved that. Appointment calls from the website increased by about a third within two months, with no complaints about “confusing pages” anymore.
+            </p>
+          </article>
+
+          <!-- Testimonial 4 -->
+          <article class="rounded-2xl bg-white border border-black/5 p-6 flex flex-col gap-4 shadow-[0_10px_40px_rgba(0,0,0,0.06)] hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out">
+            <div class="flex items-center justify-between gap-3">
+              <div>
+                <h3 class="text-sm font-semibold tracking-tight text-black">Daniel Novak</h3>
+                <p class="text-xs text-black/60">Co‑Founder, Studio Nova Architecture</p>
+              </div>
+              <div class="flex items-center gap-1 text-[#4A90E2] text-xs">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-sm text-black/70 leading-relaxed">
+              As designers ourselves we are picky about front‑end execution. FE’s QWRGQWRG design system thinking plus Tailwind craftsmanship gave us a site that looks exactly like our Figma file—and loads incredibly fast. We now confidently send prospects there as a proof of our own standards.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-10 md:py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16 mb-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-2xl bg-white flex items-center justify-center shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
+              <span class="text-black text-lg font-bold tracking-tight">FE</span>
+            </div>
+            <span class="text-sm font-semibold tracking-tight">FE Studio</span>
+          </div>
+          <p class="text-xs text-white/70 leading-relaxed">
+            Modern, minimal, and performance‑driven front‑end for ambitious local businesses.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-white/70">Contact</h3>
+          <p class="text-xs text-white/70">
+            Email:
+            <span class="font-medium">pop@[p[p.com</span>
+          </p>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-white/70">Social</h3>
+          <div class="flex items-center gap-3 text-white/70 text-sm">
+            <a href="#" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-out">
+              <i class="fab fa-linkedin-in text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-out">
+              <i class="fab fa-twitter text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-out">
+              <i class="fab fa-instagram text-xs"></i>
+            </a>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xs font-semibold uppercase tracking-wide text-white/70">Built With</h3>
+          <p class="text-xs text-white/70">
+            Tailwind CSS, semantic HTML5, and Claude‑assisted workflows for clean, reliable front‑ends.
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-4 mt-4">
+        <p class="text-[11px] text-white/60">
+          &copy; 2025 FE Studio. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = mobileMenuButton.querySelector('i');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
+        });
+
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+
+      // FAQ Accordion Toggle (if FAQ section exists)
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', () => {
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = !answer.classList.contains('hidden');
+            
+            // Close all other FAQ items (optional - remove if you want multiple open)
+            faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+              }
+            });
+            
+            // Toggle current item
+            answer?.classList.toggle('hidden');
+            item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+          });
+        }
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
